@@ -248,6 +248,14 @@ p.no {
         padding: 0;
     }
 
+    #navbarNavDropdown {
+        transform: translateX(100%);
+    }
+
+    #navbarNavDropdown.active {
+        transform: translateX(0%);
+    }
+
     .grid-cols {
         grid-template-columns: 1fr !important;
     }
