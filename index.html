@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- displays site properly based on user's device -->
+
+  <!-- Bootstrap Links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  
+  <!-- Bootstrap Script Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 2rem;
+        margin: 1rem 0 0 0;
+        box-shadow: 0 0 5px black;
+    }
+    .attribution a {
+        color: black;
+        font-weight: 500;
+        text-shadow: 0 0 5px hsl(50, 100%, 72%);
+        text-decoration-color: #969696;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="z-index: 999; border: none; background-color: transparent">
+            <span class="toggleIcon"><img src="assets/images/icon-menu.svg" alt=""></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" data-visible="false" style="z-index: 99;" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="grid-cols top-1">
+        <div class="img-container">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="">
+        </div>
+        <div class="title-container">
+          <p class="title">The Bright Future of Web 3.0?</p>
+        </div>
+        <div class="contents">
+          <p class="description">
+            We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?
+          </p>
+          <button type="submit">Read more</button>
+        </div>
+      </div>
+      <div class="grid-cols">
+        <p class="head">
+          New
+        </p>
+        <div class="card-container">
+          <div class="cards">
+            <p class="sub-head">Hydrogen VS Electric Cars</p>
+            <p class="description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="cards">
+            <p class="sub-head">The Downsides of AI Artistry</p>
+            <p class="description">What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="cards">
+            <p class="sub-head">Is VC Funding Drying Up?</p>
+            <p class="description">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-cols">
+        <div class="post-container">
+          <div class="post">
+            <div class="post-img">
+              <img src="assets/images/image-retro-pcs.jpg" alt="">
+            </div>
+            <div class="about">
+              <p class="no">01</p>
+              <p class="sub-head">Reviving Retro PCs</p>
+              <p class="description">What happens when old PCs are given modern upgrades?</p>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-img">
+              <img src="assets/images/image-top-laptops.jpg" alt="">
+            </div>
+            <div class="about">
+              <p class="no">02</p>
+              <p class="sub-head">Top 10 Laptops of 2022</p>
+              <p class="description">Our best picks for various needs and budgets.</p>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-img">
+              <img src="assets/images/image-gaming-growth.jpg" alt="">
+            </div>
+            <div class="about">
+              <p class="no">03</p>
+              <p class="sub-head">The Growth of Gaming</p>
+              <p class="description">How the pandemic has sparked fresh opportunities.</p>
+            </div>
+          </div>
+      </div>
+    </main>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl/hub" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Joyal-George-KJ" target="_blank">Joyal George K J</a>.<a>🎉</a>
+  </div>
+
+  <!-- Scripts -->
+
+  <script src="app.js"></script>
+</body>
+</html>
